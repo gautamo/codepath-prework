@@ -1,0 +1,25 @@
+svg {
+    border: 1px solid;
+}
+
+.center {
+    text-align: center;
+}
+
+.margin {
+    margin: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.message {
+    font-weight: bold;
+    text-align: center;
+    color:black;
+}
+
+a:hover {
+    text-decoration: none;
+}

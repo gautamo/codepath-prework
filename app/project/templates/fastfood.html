@@ -1,0 +1,31 @@
+<!-- templates/profile.html -->
+
+{% block head %}
+<link href="{{ url_for('static', filename='fastfood.css') }}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="title">
+  Welcome, {{ name }}!
+</h1>
+
+<div class="columns">
+
+  <div class="column">
+    <form method="post" action="/submit_order">
+      <button type="submit" class="button is-info bold is-large is-fullwidth">
+        Order Now
+      </button>
+    </form>
+  </div>
+
+  <div class="columns"></div>
+
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}
